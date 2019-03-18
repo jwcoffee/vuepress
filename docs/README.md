@@ -1,3 +1,30 @@
+# 설치방법
+
+A. npm i yarn
+
+둘중 C,B 선택해서 설치하시면 됩니다.
+
+B.# global install
+- yarn global add vuepress@next
+
+C.# install as a local dependency
+- yarn add -D vuepress@next
+
+mkdir docs
+- docs 다운로드만 해서 같다가 상위 경로에 붙치시면 실행이 됩니다.
+# 마크다운 파일을 생성한다.
+echo '# Hello VuePress' > docs/README.md
+
+pakcage.json
+
+"scripts": {
+"docs:dev": "vuepress dev docs",
+"docs:build": "vuepress build docs"
+}
+
+
+
+
 ---
 title: Home
 meta:
